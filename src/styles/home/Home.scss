@@ -1,0 +1,39 @@
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  .home-left,
+  .home-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .home-button {
+      background-color: blue;
+      height: 50px;
+      width: 150px;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 11px;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+  }
+  .home-left {
+    background-color: red;
+  }
+  .home-right {
+    background-color: green;
+  }
+  .example-appear {
+    margin-left: -100px;
+  }
+
+  .example-appear.example-appear-active {
+    margin-left: 0;
+    transition: margin-left 1500ms ease-in;
+  }
+}
